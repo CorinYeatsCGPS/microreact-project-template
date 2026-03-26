@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+TEMPLATES_DIR = SCRIPT_DIR.parent / "assets" / "templates"
 
 TEMPLATE_FILES = {
     "csv-only": "csv-only.microreact.json",
@@ -18,7 +19,7 @@ TEMPLATE_FILES = {
 
 
 def load_template(name: str) -> dict:
-    template_path = SCRIPT_DIR / TEMPLATE_FILES[name]
+    template_path = TEMPLATES_DIR / TEMPLATE_FILES[name]
     return json.loads(template_path.read_text())
 
 

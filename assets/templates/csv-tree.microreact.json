@@ -12,7 +12,7 @@
     },
     "tree-file-1": {
       "id": "tree-file-1",
-      "format": "text/x-newick",
+      "format": "text/x-nh",
       "name": "tree.nwk",
       "url": "https://example.org/tree.nwk"
     }
