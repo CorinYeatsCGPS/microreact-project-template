@@ -1,0 +1,80 @@
+{
+  "schema": "https://microreact.org/schema/v1.json",
+  "meta": {
+    "name": "CSV + Tree + Map + Timeline Starter"
+  },
+  "files": {
+    "data-file-1": {
+      "id": "data-file-1",
+      "format": "text/csv",
+      "name": "data.csv",
+      "url": "https://example.org/data.csv"
+    },
+    "tree-file-1": {
+      "id": "tree-file-1",
+      "format": "text/x-newick",
+      "name": "tree.nwk",
+      "url": "https://example.org/tree.nwk"
+    }
+  },
+  "datasets": {
+    "dataset-1": {
+      "file": "data-file-1",
+      "idFieldName": "id"
+    }
+  },
+  "tables": {
+    "table-1": {
+      "dataset": "dataset-1",
+      "title": "Metadata",
+      "columns": [
+        {
+          "field": "id"
+        },
+        {
+          "field": "name"
+        },
+        {
+          "field": "country"
+        },
+        {
+          "field": "__year"
+        },
+        {
+          "field": "__month"
+        },
+        {
+          "field": "__day"
+        },
+        {
+          "field": "__latitude"
+        },
+        {
+          "field": "__longitude"
+        }
+      ]
+    }
+  },
+  "trees": {
+    "tree-1": {
+      "title": "Tree",
+      "file": "tree-file-1"
+    }
+  },
+  "maps": {
+    "map-1": {
+      "title": "Map",
+      "latitudeField": "__latitude",
+      "longitudeField": "__longitude"
+    }
+  },
+  "timelines": {
+    "timeline-1": {
+      "title": "Timeline",
+      "dataType": "year-month-day",
+      "yearField": "__year",
+      "monthField": "__month",
+      "dayField": "__day"
+    }
+  }
+}

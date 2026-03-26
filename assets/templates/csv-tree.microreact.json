@@ -1,0 +1,49 @@
+{
+  "schema": "https://microreact.org/schema/v1.json",
+  "meta": {
+    "name": "CSV + Tree Starter"
+  },
+  "files": {
+    "data-file-1": {
+      "id": "data-file-1",
+      "format": "text/csv",
+      "name": "data.csv",
+      "url": "https://example.org/data.csv"
+    },
+    "tree-file-1": {
+      "id": "tree-file-1",
+      "format": "text/x-newick",
+      "name": "tree.nwk",
+      "url": "https://example.org/tree.nwk"
+    }
+  },
+  "datasets": {
+    "dataset-1": {
+      "file": "data-file-1",
+      "idFieldName": "id"
+    }
+  },
+  "tables": {
+    "table-1": {
+      "dataset": "dataset-1",
+      "title": "Metadata",
+      "columns": [
+        {
+          "field": "id"
+        },
+        {
+          "field": "name"
+        },
+        {
+          "field": "country"
+        }
+      ]
+    }
+  },
+  "trees": {
+    "tree-1": {
+      "title": "Tree",
+      "file": "tree-file-1"
+    }
+  }
+}

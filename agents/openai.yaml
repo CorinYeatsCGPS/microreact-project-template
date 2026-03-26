@@ -1,0 +1,4 @@
+interface:
+  display_name: "Microreact Templates"
+  short_description: "Generate Microreact project payloads"
+  default_prompt: "Use $microreact-project-template to generate or adapt a Microreact .microreact payload."

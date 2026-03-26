@@ -1,0 +1,37 @@
+{
+  "schema": "https://microreact.org/schema/v1.json",
+  "meta": {
+    "name": "CSV Only Starter"
+  },
+  "files": {
+    "data-file-1": {
+      "id": "data-file-1",
+      "format": "text/csv",
+      "name": "data.csv",
+      "url": "https://example.org/data.csv"
+    }
+  },
+  "datasets": {
+    "dataset-1": {
+      "file": "data-file-1",
+      "idFieldName": "id"
+    }
+  },
+  "tables": {
+    "table-1": {
+      "dataset": "dataset-1",
+      "title": "Metadata",
+      "columns": [
+        {
+          "field": "id"
+        },
+        {
+          "field": "name"
+        },
+        {
+          "field": "country"
+        }
+      ]
+    }
+  }
+}
